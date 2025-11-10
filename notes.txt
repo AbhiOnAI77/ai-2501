@@ -1,0 +1,351 @@
+24_October_2025
+===============
+
+-> AI (Artificial Intelligence)
+    -> Generative AI - Use for Linear Flows - LangChain
+        Input -> LLM -> Output
+
+    -> Agentic AI - Used for Non-linear Flows - LangGraph
+        Example task - I want to book a movie ticket
+        Use of API Key
+        AI Agents in the back-end are functions
+
+-> Agenda for Generative AI Projects
+    -> Introduction to Generative AI
+    -> Data Preprocessing and Embeddings
+    -> Introduction to LLMs
+    -> Transformer Architecture BERT
+    -> Hugging Face Platform & its API
+        -> A platform where AI models are available
+            -> LM (Language Model): Generates only a specific format of data 
+            -> LLM (Large Language Model): Generating text, audio, video etc.
+    -> Complete guide of OpenAI (ChatGPT)
+    -> Prompt Engineering
+    -> Vector Databases
+    -> LangChain
+        -> A framework built on python to connect with LLMs
+    -> Open-source LLMs (Mistral, Llama by Meta)
+    -> Streamlit (to build user-interfaces for client demos)
+    -> RAG (Private Data)
+    -> Fine Tuning
+    -> Projects
+
+-> Agenda for Agentic AI
+    -> LangGraph
+
+
+-> Linear vs Non-Linear Flows
+
+    -> Example of Linear Flows
+
+        if condition:
+            statements
+        else:
+            statements
+
+    -> Automate the task: "I want to push a LinkedIn post daily at 10 AM"
+
+27_October_2025 
+===============
+
+-> Applications (behind which you have LLMs): 
+        -> ChatGPT
+        -> Google Gemini
+        -> Perplexity
+        -> Claude
+        -> Mistral
+        -> Microsoft Outlook 365 - Copilot
+        -> Grammarly (AI-Powered writing enhancement, now)
+        -> GitHub Copilot 
+
+-> LLM - (Large Language Model) is an Artificial Intelligence model trained on 
+   massive amounts of text data which is available over the internet.
+
+        -> Model = Machine + Data
+
+    -> LLM can perform the following tasks as part of creating an answer: 
+       (1) read (2) write (3) summarize (4) translate
+       
+       All prompts (questions) for the LLM are designed in natural language. 
+
+    | **Year / Period**          | **Model / Version**                                     | **Key Features & Milestones**                                                                                                                |
+    | -------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+    | **2018**                   | **GPT-1**                                               | 117M parameters; introduced transformer-based language modeling by OpenAI; first proof-of-concept for generative pretraining.                |
+    | **2019**                   | **GPT-2**                                               | 1.5B parameters; generated coherent paragraphs; initially withheld due to misuse risk; later publicly released.                              |
+    | **2020**                   | **GPT-3**                                               | 175B parameters; large jump in capability; enabled zero/few-shot learning; foundation for many early AI startups.                            |
+    | **Nov 2022**               | **ChatGPT (GPT-3.5)**                                   | Public chatbot release; fine-tuned for dialogue using RLHF; gained 1M users in under a week.                                                 |
+    | **Mar 2023**               | **GPT-4 / ChatGPT Plus**                                | More accurate and creative responses; supports text + image input; higher reasoning quality.                                                 |
+    | **Mid 2023**               | **Plugins & Code Interpreter (Advanced Data Analysis)** | ChatGPT gains code execution, data analysis, and limited web browsing abilities — transforms into a versatile assistant.                     |
+    | **Late 2023**              | **Custom GPTs & Memory (Beta)**                         | Users create personalized GPTs with custom instructions and private data; memory introduced for tailored interactions.                       |
+    | **Early 2024**             | **GPT-4 Turbo**                                         | Faster, cheaper, and extended context window (up to 128k tokens); unified tools (browser, DALL·E 3, code interpreter).                       |
+    | **Mid 2025**               | **GPT-5 (Current Model)**                               | Major leap in reasoning, factual accuracy, and multimodal performance; integrates text, code, image, and web capabilities; enterprise-ready. |
+    | **Late 2025**              | **Enterprise & Teams Integration**                      | Adds organizational memory, collaboration tools, and workflow automation; connects with GitHub, Databricks, and productivity suites.         |
+    | **Beyond 2026 (Expected)** | **Next-gen GPT / Multimodal AI Agents**                 | Full persistent memory for all users; video/audio input; more autonomous “AI agents” capable of planning and executing complex workflows.    |
+
+-> Key Points
+    -> Large = Huge number of parameters (million or billion) that model learns during training.
+       E.g. 
+       
+       OpenAI
+
+       GPT is an LLM
+
+       E.g. GPT-1 -- 117 Million Parameters
+
+    -> Language: It is designed to work with natural human language - English, Spanish, Python (code) etc.
+
+    -> Model: It is a mathematical system trained to predict the next word in a sequence/sentence
+
+    -> Popular LLMs
+
+        -> OpenAI (GPT 1 -5)
+
+        -> Google - Gemini - MultiModal LLMs - Text / Image / Code Understanding
+
+        -> Meta - Llama 2 & Llama 3
+
+        -> Anthropic - Claude
+
+        -> Mistral - Mistral 78, Mistral 8x78 (Mixture of Experts)
+
+        -> Perplexity AI
+    
+    API - Application Programming Interface - URL
+
+    Problems with LLMs
+        -> Limited Context
+        -> Outdated Knowledge Base
+        -> Data Privacy
+        -> Cost
+        -> No connection with 3rd party tools (which is why RAG in Generative AI is used)
+    
+    Example of Gen AI: 
+
+    The Chef
+
+        100 Varieties of Food Items
+
+    Training Data - All the dishes the chef has tasted
+
+    Model Parameters - Chef's knowledge of flavours & techniques
+
+    Prompt - You request for a spicy pasta
+
+    Generated output - New dish created for you.
+
+29_October_2025
+===============
+
+    -> Generative AI Apps:
+
+        -> Data In:
+            -> Includes:
+                -> Text 
+                -> PDF 
+                -> CSV (Comma Separated Values) - Tables - Rows & Columns
+                -> SQL - Databases 
+                -> HTML (Hyper Text Markup Language) - Tags - <tagName>Content</tagName>
+                -> Image (PNG, JPEG, SVG)
+                -> Audio - Transcribed
+
+        -> Actions: 
+            -> RAG
+            -> Agents
+            -> APIs 
+            -> Manipulate: Modify or enhance the data like text summarization, filtering, re-writing the text etc.
+            -> Transform: Convert data from one type to another type. E.g. Text to Image
+            -> Store: Save processed data, embeddings or model outputs for reuse 
+            -> Memory: Retain conversation or context to enable continuous interactions.
+
+        -> Data Out: 
+            Any thing (text,SQL query, python, java, html code etc.)
+
+    -> Step 1: Data Collection
+    
+    -> Step 2: Data Preprocessing
+        -> Before giving data to the LLM, we need to preprocess the data
+        -> Sub-Step 1: Clean the text / data
+                   Remove noise such as HTML tags, special characters, extra spaces or irrelevant symbols. 
+
+                   Remove HTML Tags
+
+                   Syntax:
+                        <tagName>Content</tagName>
+
+                        <h1> Digital Edify </h1> (example)
+
+                    pip - command to install packages in python which allows install
+                          functinoality/group of functionalities/library/framework
+
+                    BeautifulSoup 3.2.2 package allows coders to scrape information from webpages.
+
+        -> Sub-Step 2: Remove URLs
+           
+           Email: word@domain.ai
+
+            https://
+
+            re.sub(r'http\S+wwwS+', '') #use of regular expressions to find URLs that need to be removed
+
+                sub - substitute
+
+                re - regular expression
+
+31_October_2025
+===============
+
+Step 1: Go to perplexity and type the prompt "Generate a few customer reviews with emojis"
+
+Focus areas of the code: 
+    - Remove HTML Tags
+    - Remove URLs
+    - Remove Emojis
+    - Remove Special Characters
+    - Remove Extra Spaces
+
+
+
+03_November_2025
+================
+
+Step 2: Handling Missing Values
+
+''
+
+None - Undefined
+
+NAN - Not a Number
+
+    10 + '89'
+
+num1 = 10
+num2 = '20'
+
+num_sum = num1 + num2 
+
+None or NAN -> System-level missing values/entries
+Empty Strings -> User leaves a field blank
+Placeholder Text like 'N/A', 'Not Sure' -> Human entered invalid data.
+
+
+Step 3: Language Detection (Optional)
+Data in different languages
+Use langdetect package , it supports 55 languages
+
+
+05_November_2025
+================
+
+
+
+
+
+
+
+
+07_November_2025
+================
+
+Text Generation: https://huggingface.co/tasks/text-generation 
+
+    -> Generating text is the task of generating new text given another text. These models can, for example, fill in incomplete text or paraphrase. 
+    -> Deploying models on own servers ensures privacy
+
+Configurations of making the text generation pipelines: 
+    max_new_tokens = Max length of output
+    num_return_sequences = 2 -> generate 2 variations
+    top_k = Limits the samplig to top-k words
+    temperature = Controls creativity ()
+
+
+10_November_2025
+================
+
+GenAI -> Transformers Architecture
+
+Encoder 
+Decoder 
+
+BERT -> Predictions
+GPT -> Text Generation
+
+GENERATION / Generation / Generation (sample model output that needs to be treated as the same token to save/optimize memory)
+
+HuggingFace agenda includes: 
+    1. Transformers Library (covered in last class while coding for "Text Generation", "QnA", "Translation")
+    2. Tokenization
+    3. Datasets
+    4. Spaces - Deploy in Server
+
+        Streamlit - UI
+
+        Full Stack Developer - HTML & CSS 
+
+AI Applications 
+
+distilgpt2 - Mathematical Model - Machine Learning Models
+
+    Numerical Format
+
+    Humans - Text
+
+    Math Models - Numerical Format
+
+Sentence -> Words / Sub-words (Tokens) -> Numerical IDs -> Embeddings
+
+    Vocabulary 
+
+        10.2 < 10.5
+
+Example:
+
+    The quarterly sales report exceeded expectations.
+
+    Tokens (aka tensor)
+
+    CLS     The quarterly sales report exceeded expectations .  SEP 
+
+    CLS (Start of sentence)
+    SEP (End of sentence)
+
+    Token = Input IDs (each word is assigned an ID)
+
+    101 1996 4806 5678                                          102
+
+    The IDs above are stored as tensor
+    
+    Encoding model output: 
+    {
+        'input_ids': [101, 1996, 12174, 4341, 3189, 14872, 10908, 1012, 2396, 18513, 3973, 102], 
+        'token_type_ids': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+        'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    }
+
+        'input_ids' => Token IDs for the input.
+        token_type_ids => 0/1
+
+            Question / Answer => Inputs (question + context) -> for questions value assigned is zero, for context value assigned is one.
+    
+        attention_mask => 1 / 0 (identifies whether token is real or involves padding. Padding raises the number of zeros to bring consistency when comparing a sentence with another sentence with largest word length.) 
+
+            The quarterly sales report exceeded expectations - 7 words
+
+            I love using AI - 4 words
+
+            3 words that are missing in sentence 2 will be replaced with 0.
+        
+        {
+            'input_ids': [[101, 1996, 12174, 4341, 3189, 14872, 10908, 1012, 102], [101, 1045, 2293, 2478, 9932, 102, 0, 0, 0]], 
+            'token_type_ids': [[0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0]], 
+            'attention_mask': [[1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0]]
+        }
+
+
+
+
+
+
+
+
+
+
